@@ -32,7 +32,7 @@ textarea {
   max-width: 900px;
 }
 .box {
-  //background-color: gray;
+  
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -42,7 +42,7 @@ textarea {
 }
 .a { 
   padding: 5px;
-  //background-color: silver;
+  
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -51,11 +51,11 @@ textarea {
 .labels {
   padding: 5px;
   text-align: right;
-  //background-color: yellow;
+  
 }
 .b {
   padding: 5px;
-  //background-color: green;
+  
   display: flex;
   flex-direction: column;
   text-align: left;
