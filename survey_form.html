@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" type="text/css" href="css/survey_style.css">  
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+  <head></head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    
+    <div id="form-div">
+     <form id="survey-form" action=""> 
+       
+       <div class="box">
+       <p id="description" class="a">Let us know how we can improve freeCodeCamp</p>
+      
+      
+      
+        <div class="a">
+          <div class="b"><label id="name-label" class="labels">* Name:</label></div>
+          <div class="b">
+      <input type="text" id="name" maxlength="100" placeholder="Enter your name" required></div>
+        </div>
+       
+       <div class="a">
+         <div class="b"><label id="email-label" class="labels">* Email:</label></div>
+         <div class="b">
+        <input type="email" id="email" maxlength="100" pattern='/(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@[*[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+]*/i' placeholder="Enter your email" required></div>
+        </div>
+       
+        <div class="a">
+          <div class="b"><label id="number-label" class="labels">* Age:</label></div>
+          <div class="b"><input type="number" id="number" min="1" max="100" placeholder="Age" required></div>
+        </div>
+       
+       <div class="a">
+         <div class="b"><label class="labels">Which option best describes your current role?</label></div>
+         <div class="b">
+       <select id="dropdown" class="dropdown">
+          <option value="" disabled >Select an option</option>
+  <option value="0">Student</option>
+  <option value="1">Full Time job</option>
+  <option value="2">Full Time lerner</option>
+  <option value="3">Prefer not to say</option>
+          <option value="4">Other</option>
+         </select></div>
+       </div>
+       
+        <div class="a">
+          <div class="b">
+            <label class="labels">* How likely is that you would recommend freeCodeCamp to a friend?</label></div>
+        
+          <div class="b">
+          
+         <label><input name="radios" value = "0" type="radio" >Definitely</label>
+          <label><input name="radios" value = "1" type="radio">Maybe</label>
+          <label><input name="radios" value = "2" type="radio">Not sure</label>
+         
+          </div>
+        </div>
+       
+        <div class="a">
+          <div class="b">
+            <label class="labels">What do you like most in FCC:</label>
+              </div>
+          <div class="b">
+        <select id="dropdown1" class="dropdown">
+          <option value="" disabled selected>Select an option</option>
+  <option value="0">Challenges</option>
+  <option value="1">Projects</option>
+  <option value="2">Community</option>
+  <option value="3">Open source</option>
+</select>
+          </div>
+        </div>
+        
+        <div class="a">
+        <div class="b">
+          <label class="labels">Things that should be improved in the future
+            (Check all that apply):</label></div>
+        <div class="b">
+          <label><input type="checkbox" name="things" value="0"> Front-end Projects</label>
+          <label><input type="checkbox" name="things" value="1"> Back-end Projects</label>
+          <label><input type="checkbox" name="things" value="2"> Data Visualization</label>
+          <label><input type="checkbox" name="things" value="3"> Challenges</label>
+          <label><input type="checkbox" name="things" value="4"> Open Source Community</label>
+          <label><input type="checkbox" name="things" value="5"> Gitter help rooms</label>
+          <label><input type="checkbox" name="things" value="6"> Videos</label>
+          <label><input type="checkbox" name="things" value="7"> City Meetups</label>
+          <label><input type="checkbox" name="things" value="8"> Wiki</label>
+          <label><input type="checkbox" name="things" value="9"> Forum</label>
+          <label><input type="checkbox" name="things" value="10"> Additional Courses</label>
+          </div>
+        </div>
+        
+        <div class="a">
+          <div class="b">
+            <label class="labels">Any Comments or Suggestions?</label>
+          </div>
+        <div class="b">
+          <textarea placeholder="Enter your comment here..."></textarea>
+          </div>
+        </div>
+        </div>
+          <button type="submit" id="submit">Submit</button>
+       
+      </form>
+    </div>
+
+<div> 
+<pre>Copyright (c) 2019 by Karskaya (https://codepen.io/karskaya/pen/dLmZov)
+
+
+Fork of an original work by freeCodeCamp (https://codepen.io/freeCodeCamp/pen/VPaoNP)
+
+
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of 
+this software and associated documentation files (the "Software"), 
+to deal in the Software without restriction, including without limitation the rights to use,
+ copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software,
+  and to permit persons to whom the Software is furnished to do so, 
+  subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies
+ or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+ INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+ PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR 
+ COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, 
+ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</pre>
+</div>
+  </body>
+</html>
