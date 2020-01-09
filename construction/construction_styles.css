@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url('../construction/background-abstract.jpg');
+    background-image: url('./img/background-abstract.jpg');
     background-color: #ebebe9;
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,10 +14,10 @@ body {
 }
 
 h1 {
-    color: white;
+    color: #ebebe9;
     font-size: 4rem;
     font-family: sans-serif;
-    text-shadow: 1px 1px 2px black, 1px 1px 10px #05062a, 1px 1px 10px #05062a;
+    text-shadow: 1px 1px 2px #05062a, 1px 1px 10px tomato, 1px 1px 10px tomato;
     text-align: center;
     line-height: 97vmin;
 }
