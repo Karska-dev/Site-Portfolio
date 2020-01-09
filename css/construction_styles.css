@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../construction/background-abstract.jpg');
+    background-color: #ebebe9;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-width: 600px;
+}
+
+h1 {
+    color: white;
+    font-size: 4rem;
+    font-family: sans-serif;
+    text-shadow: 1px 1px 2px black, 1px 1px 10px #05062a, 1px 1px 10px #05062a;
+    text-align: center;
+    line-height: 97vmin;
+}
+
+pre {
+    text-shadow: 1px 1px 3px white;
+}
+
+span {
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+span.fade {
+    opacity: 1;
+}
+
+span.colored {
+    color: tomato;
+}
