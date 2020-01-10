@@ -38,3 +38,13 @@ span.fade {
 span.colored {
     color: tomato;
 }
+
+@media (max-width: 600px) {
+    body {
+        background-image: url('../construction/background-abstract-sm.jpg');
+        min-width: 200px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+}
