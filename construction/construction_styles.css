@@ -31,10 +31,28 @@ span {
     transition: all 2s ease;
 }
 
+span:hover {
+    cursor: default;
+}
+
 span.fade {
     opacity: 1;
 }
 
+span.fade:hover {
+    cursor: pointer;
+}
+
 span.colored {
     color: tomato;
+}
+
+@media (max-width: 600px) {
+    body {
+        background-image: url('./img/background-abstract-sm.jpg');
+        min-width: 200px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
 }
