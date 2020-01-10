@@ -1,0 +1,118 @@
+
+:root {
+  --pepperstem: #8D9440;
+  --terrariummoss: #616247;
+  --mangomohito: #D69C2F;
+  --aspengold: #FFD858;
+  --soybean: #D2C29D;
+  --pinkpeacock: #C62168;
+  --sweetlilac: #E7B8D3;
+  --background: #eee;
+  --livingcoral: #FA7268;
+  --sweetcorn: #F2EDD7;
+}
+body {
+  min-width: 320px;
+  background-color: var(--soybean);
+  font-family: 'Jura', sans-serif;
+  margin-right: 50px;  
+}
+header {
+  font-family: 'Gaegu', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  padding-top: 25px;
+  padding-left: 5px;
+}
+h3 {
+  font-family: 'Gaegu', sans-serif;
+}
+strong {
+  font-style: italic;
+  color: var(--pinkpeacock);
+}
+th {
+  text-align: left;
+  //border: 1px dotted black;
+  background-color: var(--sweetcorn);
+}
+
+#navbar {
+  position: fixed;
+  background-color: var(--sweetcorn);
+  border-style: solid;
+  border-width: 1px;
+  //border-radius: 5px;
+  height: 100%;
+  width: 15vw;
+  font-family: 'Gaegu', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+article {
+  position: absolute;
+  margin: 5px auto 5px auto;
+  padding-left: 15px;
+  
+}
+
+.code-box {
+  background-color: var(--sweetcorn);
+  border-style: dotted;
+  border-width: 1px;
+  border-radius: 5px;
+  padding: 5px 5px 5px 15px;
+}
+.content {
+  list-style-type: none;
+  /*border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;*/
+  padding-left: 0px;
+}
+.chapter {
+  border-style: solid;
+  border-width: 1px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-radius: 0px;
+  padding-left: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--terrariummoss);
+}
+@media only screen 
+  and (min-device-width: 1200px)  
+  { 
+    
+    article {
+    margin-left: 15vw;
+    margin-right: 5vw;
+  }
+}
+@media (max-width: 800px) {  
+  
+  #navbar{
+    position: absolute;
+    width: 98%;
+    height: 200px;
+  }
+  header {
+    text-align: center;
+  }
+  .content {
+    height: 145px;
+    overflow: auto;
+    margin-top: 0px;   
+}
+  article {
+    margin-top: 200px;
+    margin-left: 0px;
+    
+  }
+}
