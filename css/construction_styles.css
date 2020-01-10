@@ -17,7 +17,7 @@ h1 {
     color: white;
     font-size: 4rem;
     font-family: sans-serif;
-    text-shadow: 1px 1px 2px black, 1px 1px 10px #05062a, 1px 1px 10px #05062a;
+    text-shadow: 1px 1px 2px #05062a, 1px 1px 10px tomato, 1px 1px 10px tomato;
     text-align: center;
     line-height: 97vmin;
 }
