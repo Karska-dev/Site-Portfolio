@@ -1,2 +1,2 @@
 console.warn('Temporary redirected');
-window.location.href = "./construction/construction.html";
+//window.location.href = "./construction/construction.html";
