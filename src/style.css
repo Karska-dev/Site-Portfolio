@@ -81,12 +81,12 @@ h1 {
 }
 
 img {
-  border-radius: 0px;
+  border-radius: 5px;
 }
 
 .project-tile {
   background-color: var(--mygreen);
-  border-radius: 0px;
+  border-radius: 5px;
   margin: 10px;
   padding: 10px 10px 10px 10px;
 }
