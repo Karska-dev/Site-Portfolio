@@ -5,9 +5,9 @@ const sections = document.querySelectorAll('section');
 //console.log(sections);
 const bubble = document.querySelector(".bubble");
 const gradients = [
-    "linear-gradient(to right top,  grey, tomato)",
-    "linear-gradient(to right top,  tomato, olive)",
-    "linear-gradient(to right top, teal, rgb(60, 44, 131))",
+    "linear-gradient(to right top,  grey, wheat)",
+    "linear-gradient(to right top,  wheat, olive)",
+    "linear-gradient(to right top, wheat, rgb(60, 44, 131))",
 ]
 
 const options = {
@@ -33,7 +33,7 @@ function navCheck(entries) {
             bubble.style.setProperty('top', `${directions.top}px`);
             bubble.style.setProperty('width', `${directions.width}px`);
             bubble.style.setProperty('height', `${directions.height}px`);
-            bubble.style.background = gradients[gradientIndex];
+            //bubble.style.background = gradients[gradientIndex];
             bubble.style.borderRadius = '15px 50px';
         }
     })

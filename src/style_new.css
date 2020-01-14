@@ -83,7 +83,7 @@ nav {
 .bubble {
     position: absolute;
     z-index: -2;
-    background: linear-gradient(to right top, #f46b45, #eea849);
+    background: rgba(255, 255, 255, 0.2);
     transform: scale(2);
     transition: all 0.5s ease;
 }
@@ -95,7 +95,7 @@ nav {
 }
 
 a {
-    color: tomato;
+    color: wheat;
     text-shadow: 0 0 1px black, 0 0 2px black;
     text-decoration: none;
     font-family: 'Gugi';
