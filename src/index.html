@@ -24,16 +24,17 @@
       rel="stylesheet"
     />
     <nav id="navbar">
-      <a class="nav-link" href="#welcome-section">Welcome!</a>
-      <a class="nav-link" href="#projects">Projects</a>
-      <a class="nav-link" href="#social-media">Contact</a>
+      <a data-page="welcome" class="nav-link" href="#welcome-section">Welcome!</a>
+      <a data-page="projects" class="nav-link" href="#projects">Projects</a>
+      <a data-page="social-media" class="nav-link" href="#social-media">Contact</a>
+      <div class="bubble"></div>
     </nav>
-    <section id="welcome-section">
+    <section data-index="0" id="welcome-section" class="welcome">
       <h1>Hello I'm Oleksandra!</h1>
       <h2>a software developer!</h2>
     </section>
 
-    <section id="projects">
+    <section data-index="1" id="projects" class="projects">
       <div class="project-tile">
         <a class="project-link" href="https://codepen.io/karskaya/pen/pBLJoL"
           ><img
@@ -91,7 +92,7 @@
       </div>
     </section>
 
-    <section id="social-media">
+    <section data-index="2" id="social-media" class="social-media">
       <a
         class="social"
         id="profile-link"
