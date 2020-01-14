@@ -24,14 +24,14 @@ section {
   flex-direction: row;
   overflow: hidden;
   align-items: center;
-  background: url('./patterns/gplay.png ');
+  background: url('./patterns/skulls.png');
 }
 
 section#social-media {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url('./patterns/connected.png');
+  background: url('./patterns/skulls.png');
 }
 
 section h1 {
