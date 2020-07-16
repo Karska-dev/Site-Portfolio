@@ -1,1 +1,46 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+*, *::after, *::before {
+  border: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  background-color: #222222;
+  font-size: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+section {
+  height: 100vh;
+  color: white;
+}
+
+.intro {
+  position: relative;
+}
+
+.intro__title {
+  position: absolute;
+  left: 10%;
+  top: 20%;
+}
+
+.intro__title h1 {
+  font-size: 1.875rem;
+  font-weight: 300;
+}
+
+.intro__title p {
+  color: #FF5722;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.intro__title p img {
+  -webkit-filter: invert(40%) sepia(60%) saturate(2239%) hue-rotate(346deg) brightness(101%) contrast(101%);
+          filter: invert(40%) sepia(60%) saturate(2239%) hue-rotate(346deg) brightness(101%) contrast(101%);
+  width: 2.8125rem;
+  margin: 0.625rem 0.625rem 0 0;
+}
+/*# sourceMappingURL=style.css.map */
