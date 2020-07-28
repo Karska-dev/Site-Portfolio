@@ -1,0 +1,14 @@
+.projects {
+
+  background-image: linear-gradient(to bottom,#545454, #000000);
+
+  &--background {
+    background-image: url(../patterns/skulls.png);
+    height: inherit;
+
+    &-cover {
+      background-image: linear-gradient(to bottom, rgba(34,34,34,0), rgba(34,34,34,1));
+      height: inherit;
+    }
+  }
+}
