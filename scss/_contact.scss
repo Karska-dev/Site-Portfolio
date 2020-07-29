@@ -1,0 +1,31 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    width: 5.3125rem;
+    height: 5.3125rem;
+
+    svg {
+      stroke: white;
+      stroke-width: 10px;
+      
+      path {
+        fill: none;
+      }
+    }
+  }
+
+  a:not(:last-child) {
+    margin-bottom: 5px;
+  }
+
+  a:hover {
+    // tricky way to change color of the svg
+    filter: invert(40%) sepia(60%) saturate(2239%) hue-rotate(346deg) brightness(101%) contrast(101%);
+  }
+
+}

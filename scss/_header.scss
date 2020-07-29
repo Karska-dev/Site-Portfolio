@@ -1,0 +1,26 @@
+.header {
+  position: fixed;
+  top: 0;
+  height: 3.75rem;
+  width: 100%;
+  color: white;
+  padding: 0 0.8125rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__toggle {
+    width: 13.25rem;
+    height: 2.0625rem;
+    border: 2px solid $gray;
+    border-radius: 1rem;
+  }
+
+  &__menu {
+    font-size: $font-lg;
+  }
+
+  &__menu:hover {
+    color: $orangeRed;
+  }
+}
