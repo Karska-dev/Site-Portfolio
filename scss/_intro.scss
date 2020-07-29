@@ -1,6 +1,7 @@
 .intro {
 
   position: relative;
+
   &__title {
     position: absolute;
     left: 10%;
@@ -20,6 +21,18 @@
           width: 2.8125rem;
           margin: 0.625rem 0.625rem 0 0;
       }
+    }
+  }
+
+  &__background {
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: inherit;
+
+    svg {
+      height: inherit;
     }
   }
 }
