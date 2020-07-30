@@ -8,6 +8,7 @@
   a {
     width: 5.3125rem;
     height: 5.3125rem;
+    transition: transform 300ms ease-in-out;
 
     svg {
       stroke: white;
@@ -15,6 +16,7 @@
       
       path {
         fill: none;
+        transition: stroke 300ms ease-in-out;
       }
     }
   }
@@ -24,8 +26,10 @@
   }
 
   a:hover {
-    // tricky way to change color of the svg
-    filter: invert(40%) sepia(60%) saturate(2239%) hue-rotate(346deg) brightness(101%) contrast(101%);
+    svg path {
+      stroke: $orangeRed;
+    }
+    transform: scale(1.1);
   }
 
 }

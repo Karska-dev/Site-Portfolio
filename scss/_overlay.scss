@@ -1,0 +1,82 @@
+.overlay {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background-image: url('../patterns/connected.png');
+  background-color: $black;
+  color: white;
+
+  &__cover {
+    height: inherit;
+    background-image: linear-gradient(
+      to top,
+      rgba(34, 34, 34, 0),
+      rgba(34, 34, 34, 0.97),
+      rgba(34, 34, 34, 1)
+    );
+  }
+}
+
+.menu {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+
+  a {
+    text-decoration: none;
+    color: white;
+    transition: color 300ms ease-in-out;
+    transition: transform 300ms ease-in-out;
+  }
+
+  &__close {
+    font-size: $font-lg;
+    align-self: flex-end;
+    transition: color 300ms ease-in-out;
+    transition: transform 300ms ease-in-out;
+
+    &:hover {
+      color: $orangeRed;
+      transform: scale(1.1);
+    }
+  }
+
+  &__items {
+    font-size: 1.875rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 45%;
+    
+    a {
+      color: $grayishBlue;
+
+      &:hover{
+        color: $orangeRed;
+        transform: scale(1.1);
+      }
+    }
+
+  }
+
+  &__links {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;  
+
+    a:hover {
+      color: $orangeRed;
+      transform: scale(1.1);
+    }
+  }
+
+}
