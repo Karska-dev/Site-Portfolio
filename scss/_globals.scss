@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+*:focus
+{
+  outline: none;
+}
+
 html {
   background-color: $mainColor;
   font-size: 100%;
