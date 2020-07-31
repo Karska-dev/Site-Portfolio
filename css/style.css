@@ -16,6 +16,24 @@ section {
   color: white;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
+  -webkit-transition: -webkit-transform 300ms ease-in-out;
+  transition: -webkit-transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+}
+
+a:hover {
+  color: #FF5722;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+
 .intro {
   position: relative;
 }
@@ -92,12 +110,8 @@ section {
 }
 
 .contact a {
-  width: 5.3125rem;
-  height: 5.3125rem;
-  -webkit-transition: -webkit-transform 300ms ease-in-out;
-  transition: -webkit-transform 300ms ease-in-out;
-  transition: transform 300ms ease-in-out;
-  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+  width: 4.0625rem;
+  height: 4.0625rem;
 }
 
 .contact a svg {
@@ -112,12 +126,7 @@ section {
 }
 
 .contact a:not(:last-child) {
-  margin-bottom: 5px;
-}
-
-.contact a:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  margin-bottom: 10px;
 }
 
 .contact a:hover svg path {
@@ -147,7 +156,7 @@ circle {
   height: 3.75rem;
   width: 100%;
   color: white;
-  background-color: rgba(36, 36, 36, 0.5);
+  background-color: rgba(34, 34, 34, 0.5);
   padding: 0 0.8125rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -169,15 +178,10 @@ circle {
   border-radius: 1rem;
 }
 
-.header__menu {
+.header__menu a {
   font-size: 1.25rem;
   -webkit-transition: color 300ms ease-in-out;
   transition: color 300ms ease-in-out;
-}
-
-.header__menu:hover {
-  color: #FF5722;
-  font-weight: 500;
 }
 
 .header:hover {

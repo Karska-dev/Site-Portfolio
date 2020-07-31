@@ -15,3 +15,16 @@ section {
   color: $textColor;
   
 }
+
+a {
+  text-decoration: none;
+  color: white;
+  transition: color 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+
+  &:hover {
+    color: $orangeRed;
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+}

@@ -6,9 +6,8 @@
   align-items: center;
 
   a {
-    width: 5.3125rem;
-    height: 5.3125rem;
-    transition: transform 300ms ease-in-out;
+    width: 4.0625rem;
+    height: 4.0625rem;
 
     svg {
       stroke: white;
@@ -22,14 +21,14 @@
   }
 
   a:not(:last-child) {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
 
   a:hover {
+    
     svg path {
       stroke: $orangeRed;
     }
-    transform: scale(1.1);
   }
 
 }
