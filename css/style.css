@@ -326,6 +326,7 @@ circle {
 
 .overlay {
   display: none;
+  opacity: 0;
   position: absolute;
   z-index: 1;
   height: 100%;
@@ -333,6 +334,13 @@ circle {
   background-image: url("../patterns/connected.png");
   background-color: #222222;
   color: white;
+  -webkit-transition: opacity 3s ease-in-out;
+  transition: opacity 3s ease-in-out;
+}
+
+.overlay--visible {
+  display: block;
+  opacity: 1;
 }
 
 .overlay__cover {
@@ -356,7 +364,7 @@ circle {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px;
+  padding: 18px 10px;
 }
 
 .menu a {
@@ -368,6 +376,10 @@ circle {
   transition: -webkit-transform 300ms ease-in-out;
   transition: transform 300ms ease-in-out;
   transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+}
+
+.menu a:hover {
+  color: #FF5722;
 }
 
 .menu__close {

@@ -1,11 +1,21 @@
 let menuBtn = document.querySelector('.header__menu');
+let overlay = document.querySelector('.overlay');
+let closeBtn = document.querySelector('.menu__close');
+
 let header = document.querySelector('header');
 
 menuBtn.addEventListener('click', openMenu);
 
 function openMenu() {
+  //console.log('click-click');
+  overlay.classList.add('overlay--visible');
+}
 
-  console.log('click-click');
+closeBtn.addEventListener('click', closeMenu);
+
+function closeMenu() {
+  //console.log('click-click');
+  overlay.classList.remove('overlay--visible');
 }
 
 let toggle = document.querySelector('.toggle__checkbox');

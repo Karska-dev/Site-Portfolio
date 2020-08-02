@@ -1,5 +1,6 @@
 .overlay {
   display: none;
+  opacity: 0;
   position: absolute;
   z-index: 1;
   height: 100%;
@@ -7,6 +8,12 @@
   background-image: url('../patterns/connected.png');
   background-color: $black;
   color: white;
+  transition: opacity 3s ease-in-out;
+
+  &--visible {
+    display: block;
+    opacity: 1;
+  }
 
   &__cover {
     height: inherit;
@@ -25,13 +32,17 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 18px 10px;
 
   a {
     text-decoration: none;
     color: white;
     transition: color 300ms ease-in-out;
     transition: transform 300ms ease-in-out;
+
+    &:hover {
+      color: $orangeRed;
+    }
   }
 
   &__close {
