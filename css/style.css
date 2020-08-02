@@ -102,7 +102,7 @@ a:hover {
 .projects__grid {
   width: 50%;
   margin: 0 auto;
-  padding: 2rem 0;
+  padding: 4.6875rem 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -175,6 +175,7 @@ a:hover {
   position: absolute;
   font-weight: 700;
   left: 1rem;
+  right: 1rem;
   bottom: 1rem;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
@@ -188,6 +189,7 @@ a:hover {
   font-weight: 300;
   font-size: .75rem;
   left: 1rem;
+  right: 1rem;
   top: 100%;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
@@ -276,10 +278,13 @@ circle {
   transition: background 300ms ease-in-out;
 }
 
+.header--light {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
 .header__toggle {
   width: 13.25rem;
   height: 2.0625rem;
-  border: 1px dotted #9E9E9E;
 }
 
 .header__menu a {
@@ -290,6 +295,10 @@ circle {
 
 .header:hover {
   background-color: rgba(36, 36, 36, 0.7);
+}
+
+.header--light:hover {
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 @-webkit-keyframes fade-out {

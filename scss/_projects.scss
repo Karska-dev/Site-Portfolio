@@ -24,7 +24,7 @@
   &__grid {
     width: 50%;
     margin: 0 auto;
-    padding: 2rem 0;
+    padding: 4.6875rem 0;
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
@@ -92,6 +92,7 @@
     position: absolute;
     font-weight: 700;
     left: 1rem;
+    right: 1rem;
     bottom: 1rem;
     transition: all 300ms ease-in-out;
     transition-delay: 0.15s;
@@ -103,6 +104,7 @@
     font-weight: 300;
     font-size: .75rem;
     left: 1rem;
+    right: 1rem;
     top: 100%;
     transition: all 300ms ease-in-out;
     transition-delay: 0.25s;
