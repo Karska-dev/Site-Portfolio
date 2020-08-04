@@ -1,16 +1,19 @@
 // Basic colors
-$white: hsl(0, 0%, 100%);;
+$white: #ffffff;;
 $black: #222222;
 $orangeRed: #FF5722;
-$grayishBlue: #607D8B;
+$grayishBlue: rgb(96, 125, 139);
 $gray: #9E9E9E;
 
-// Dark theme colors
-$mainColor: $black;
-$textColor: $white;
-$accentColor: $orangeRed;
-$secondColor: $grayishBlue;
-$thirdColor: $gray;
+:root {
+  --mainColor: #222222;
+  --mainColorOpac: rgba(34, 34, 34, 0.5);
+  --mainColorSemiOpac: rgba(34, 34, 34, 0.7);
+  --textColor: #ffffff;
+  --accentColor: #FF5722;
+  --secondColor: #607D8B;
+  --thirdColor: #9E9E9E;
+}
 
 // Font sizes
 $font-sm: 0.875rem; // 14px

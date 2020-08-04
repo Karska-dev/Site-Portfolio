@@ -1,0 +1,10 @@
+:root {
+  --mainColor: #ffffff;
+  --mainColorOpac: rgba(255, 255, 255, 0.5);
+  --mainColorSemiOpac: rgba(255, 255, 255, 0.7);
+  --textColor: #222222;
+  --accentColor: #FF5722;
+  --secondColor: #607D8B;
+  --thirdColor: #9E9E9E;
+
+}

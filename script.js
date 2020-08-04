@@ -9,6 +9,7 @@ menuBtn.addEventListener('click', openMenu);
 function openMenu() {
   //console.log('click-click');
   overlay.classList.add('overlay--visible');
+  
 }
 
 closeBtn.addEventListener('click', closeMenu);
@@ -25,8 +26,8 @@ toggle.addEventListener('change', switchMode);
 function switchMode(event) {
   //console.log('switch-switch');
   if (event.target.checked) {
-    header.classList.add('header--light');
+    //header.classList.add('header--light');
   } else {
-    header.classList.remove('header--light');
+    //header.classList.remove('header--light');
   }
 }

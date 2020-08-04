@@ -63,13 +63,13 @@
       }
 
       & .projects__title {
-        color: $orangeRed;
+        color: var(--accentColor);
         bottom: 45%;
       }
 
       & .projects__description {
         top: 60%;
-        color: white;
+        color: var(--textColor);
       }
 
       &::before {

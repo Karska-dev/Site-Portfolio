@@ -10,14 +10,17 @@
     height: 4.0625rem;
 
     svg {
-      stroke: white;
       stroke-width: 10px;
       
       path {
-        fill: none;
+        fill: var(--thirdColor);
         transition: stroke 300ms ease-in-out;
       }
     }
+  }
+
+  a[href^="mailto:"]::after {
+    content: " ";
   }
 
   a:not(:last-child) {
@@ -27,8 +30,9 @@
   a:hover {
     
     svg path {
-      stroke: $orangeRed;
+      fill: var(--accentColor);
     }
+
   }
 
 }
