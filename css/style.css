@@ -48,6 +48,10 @@ a:hover {
   cursor: pointer;
 }
 
+.noscroll {
+  overflow: hidden;
+}
+
 .intro {
   position: relative;
 }
