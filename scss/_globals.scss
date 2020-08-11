@@ -1,0 +1,39 @@
+*, *::after, *::before {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:focus
+{
+  outline: none;
+}
+
+html {
+  background-color: var(--mainColor);
+  font-size: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+section {
+  height: 100vh;
+  color: var(--textColor);
+  
+}
+
+a {
+  text-decoration: none;
+  color: var(--textColor);
+  transition: color 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+
+  &:hover {
+    color: var(--accentColor);
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+}
+
+.noscroll {
+  overflow: hidden;
+}

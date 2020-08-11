@@ -1,0 +1,13 @@
+@keyframes fade-out {
+
+  to {
+    height: 100%;
+    background-color: var(--secondColor);
+    color: var(--textColor);
+    opacity: 1;
+  }
+}
+
+.fade-out {
+  animation: fade-out 500ms ease-in-out forwards;
+}

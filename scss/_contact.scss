@@ -1,0 +1,38 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    width: 4.0625rem;
+    height: 4.0625rem;
+
+    svg {
+      stroke-width: 10px;
+      
+      path {
+        fill: var(--thirdColor);
+        transition: stroke 300ms ease-in-out;
+      }
+    }
+  }
+
+  a[href^="mailto:"]::after {
+    content: " ";
+  }
+
+  a:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  a:hover {
+    
+    svg path {
+      fill: var(--accentColor);
+    }
+
+  }
+
+}

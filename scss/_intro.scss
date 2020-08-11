@@ -1,0 +1,38 @@
+.intro {
+
+  position: relative;
+
+  &__title {
+    position: absolute;
+    left: 10%;
+    top: 20%;
+
+    h1 {
+      font-size: 1.875rem;
+      font-weight: 300;
+    }
+    p {
+      color: var(--accentColor);
+      font-size: 1.25rem;
+      font-weight: 700;
+      img {
+          // tricky way to change color of the svg
+          filter: invert(40%) sepia(60%) saturate(2239%) hue-rotate(346deg) brightness(101%) contrast(101%);
+          width: 2.8125rem;
+          margin: 0.625rem 0.625rem 0 0;
+      }
+    }
+  }
+
+  &__background {
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: inherit;
+
+    svg {
+      height: inherit;
+    }
+  }
+}
