@@ -33,6 +33,11 @@ background-position: center;
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
+
+    @include breakpoint-up(medium) {
+      width: 90%;
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   &__item {
