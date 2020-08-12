@@ -72,7 +72,8 @@ background-position: center;
     }
 
     &:hover, &:focus {
-      transform: scale(1.05);
+      transform: scale(1.2);
+      opacity: 1;
       z-index: 1;
 
       & .projects__image {
