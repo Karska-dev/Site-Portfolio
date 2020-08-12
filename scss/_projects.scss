@@ -38,6 +38,12 @@ background-position: center;
       width: 90%;
       grid-template-columns: repeat(2, 1fr);
     }
+
+    @include breakpoint-up(large) {
+      width: 90%;
+      max-width: 106.5626rem;
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 
   &__item {
@@ -67,6 +73,7 @@ background-position: center;
 
     &:hover, &:focus {
       transform: scale(1.05);
+      z-index: 1;
 
       & .projects__image {
         filter: blur(3px);
