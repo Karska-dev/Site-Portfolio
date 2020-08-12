@@ -62,9 +62,32 @@ a:hover {
   top: 20%;
 }
 
+@media (min-width: 40em) {
+  .intro__title {
+    left: 35%;
+    top: 35%;
+  }
+}
+
+@media (min-width: 64em) {
+  .intro__title {
+    left: 22%;
+    top: 35%;
+  }
+}
+
 .intro__title h1 {
   font-size: 1.875rem;
   font-weight: 300;
+}
+
+@media (min-width: 64em) {
+  .intro__title h1 {
+    font-size: 3.75rem;
+  }
+  .intro__title h1 br {
+    display: none;
+  }
 }
 
 .intro__title p {
@@ -138,6 +161,15 @@ a:hover {
   }
 }
 
+@media (min-width: 64em) {
+  .projects__grid {
+    width: 90%;
+    max-width: 106.5626rem;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .projects__item {
   position: relative;
   overflow: hidden;
@@ -165,6 +197,7 @@ a:hover {
 .projects__item:hover, .projects__item:focus {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+  z-index: 1;
 }
 
 .projects__item:hover .projects__image, .projects__item:focus .projects__image {
