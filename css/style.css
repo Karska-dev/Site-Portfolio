@@ -130,6 +130,14 @@ a:hover {
   gap: 1rem;
 }
 
+@media (min-width: 40em) {
+  .projects__grid {
+    width: 90%;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .projects__item {
   position: relative;
   overflow: hidden;
@@ -236,6 +244,15 @@ a:hover {
           align-items: center;
 }
 
+@media (min-width: 40em) {
+  .contact {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .contact a {
   width: 4.0625rem;
   height: 4.0625rem;
@@ -256,7 +273,14 @@ a:hover {
 }
 
 .contact a:not(:last-child) {
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
+}
+
+@media (min-width: 40em) {
+  .contact a:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 0.625rem;
+  }
 }
 
 .contact a:hover svg path {
