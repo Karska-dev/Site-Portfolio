@@ -528,6 +528,12 @@ circle {
           align-items: center;
 }
 
+.menu__links a svg {
+  width: 1.5em;
+  margin-bottom: -0.25em;
+  margin-right: 0.25em;
+}
+
 .menu__links a:hover {
   color: var(--accentColor);
   -webkit-transform: scale(1.1);

@@ -84,6 +84,14 @@
     justify-content: space-evenly;
     align-items: center;  
 
+    a {
+      svg {
+        width: 1.5em;
+        margin-bottom: -0.25em;
+        margin-right: 0.25em;
+      }
+    }
+
     a:hover {
       color: var(--accentColor);
       transform: scale(1.1);
