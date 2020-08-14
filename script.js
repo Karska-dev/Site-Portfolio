@@ -1,9 +1,7 @@
+// open/close menu button
 let menuBtn = document.querySelector('.header__menu');
 let overlay = document.querySelector('.overlay');
 let closeBtn = document.querySelector('.menu__close');
-
-let header = document.querySelector('header');
-let cssStyle = document.querySelector('#theme-style');
 
 menuBtn.addEventListener('click', openMenu);
 
@@ -21,7 +19,15 @@ function closeMenu() {
   document.body.classList.remove('noscroll');
 }
 
+// menu links - fix for exit from menu
+let menuLinks = document.querySelectorAll('.menu__link');
+
+Object.values(menuLinks).map((link) => {link.addEventListener('click', closeMenu)});
+
+// light/dark mode switch or toggle
 let toggle = document.querySelector('.toggle__checkbox');
+let header = document.querySelector('header');
+let cssStyle = document.querySelector('#theme-style');
 
 toggle.addEventListener('change', switchMode);
 

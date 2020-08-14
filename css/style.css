@@ -195,8 +195,9 @@ a:hover {
 }
 
 .projects__item:hover, .projects__item:focus {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: 1;
   z-index: 1;
 }
 
