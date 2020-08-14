@@ -182,7 +182,6 @@ a:hover {
 .projects__item {
   position: relative;
   overflow: hidden;
-  background-color: white;
   opacity: 0.85;
   border-radius: 5px;
   -webkit-transition: all 300ms ease-in-out;
