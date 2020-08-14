@@ -40,12 +40,16 @@
 
 .projects {
   background-color: white;
-  background-image: linear-gradient(265deg, rgb(158, 158, 158), transparent);
+  background-image: none;
 }
 
 .projects__cover {
   background-color: transparent;
   background-image: none;
+}
+
+.projects__item {
+  filter: drop-shadow(2px 4px 6px gray);
 }
 
 .projects__item::before {
@@ -71,5 +75,5 @@
 }
 
 .contact__cover {
-  background-image: linear-gradient(265deg, rgb(158, 158, 158), transparent);
+  background-image: linear-gradient(to bottom, white 10%, transparent);
 }
