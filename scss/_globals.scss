@@ -37,3 +37,18 @@ a {
 .noscroll {
   overflow: hidden;
 }
+
+.home-link {
+  svg {
+    height: 2.25rem;
+    path {
+      transition: fill 300ms ease-in-out;
+    }
+  }
+
+  &:hover {
+    svg path{
+      fill: var(--accentColor);
+    }
+  }
+}

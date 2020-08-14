@@ -52,6 +52,19 @@ a:hover {
   overflow: hidden;
 }
 
+.home-link svg {
+  height: 2.25rem;
+}
+
+.home-link svg path {
+  -webkit-transition: fill 300ms ease-in-out;
+  transition: fill 300ms ease-in-out;
+}
+
+.home-link:hover svg path {
+  fill: var(--accentColor);
+}
+
 .intro {
   position: relative;
 }
@@ -130,6 +143,12 @@ a:hover {
   background-image: linear-gradient(to bottom, rgba(34, 34, 34, 0), #222222);
   height: inherit;
   min-height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .projects__grid {
@@ -140,7 +159,7 @@ a:hover {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  gap: 1rem;
+  gap: 2.5rem;
 }
 
 @media (min-width: 40em) {
@@ -163,7 +182,6 @@ a:hover {
 .projects__item {
   position: relative;
   overflow: hidden;
-  background-color: white;
   opacity: 0.85;
   border-radius: 5px;
   -webkit-transition: all 300ms ease-in-out;
@@ -283,14 +301,10 @@ a:hover {
   height: 4.0625rem;
 }
 
-.contact__cover a svg {
-  stroke-width: 10px;
-}
-
 .contact__cover a svg path {
   fill: var(--thirdColor);
-  -webkit-transition: stroke 300ms ease-in-out;
-  transition: stroke 300ms ease-in-out;
+  -webkit-transition: fill 300ms ease-in-out;
+  transition: fill 300ms ease-in-out;
 }
 
 .contact__cover a[href^="mailto:"]::after {
@@ -590,5 +604,12 @@ circle {
 .toggle__checkbox:checked ~ .toggle__layer {
   border-color: var(--mainColor);
   background-color: var(--secondColor);
+}
+
+.article {
+  width: 90%;
+  height: inherit;
+  margin: 0 auto;
+  padding-top: 10%;
 }
 /*# sourceMappingURL=style.css.map */
