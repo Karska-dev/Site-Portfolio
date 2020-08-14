@@ -17,6 +17,8 @@
     );
     height: inherit;
     min-height: inherit;
+    display: flex;
+    align-items: center;
   }
 
   &__grid {
@@ -25,7 +27,7 @@
     padding: 4.6875rem 0;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 2.5rem;
 
     @include breakpoint-up(medium) {
       width: 90%;

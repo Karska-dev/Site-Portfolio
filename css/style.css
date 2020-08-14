@@ -130,6 +130,12 @@ a:hover {
   background-image: linear-gradient(to bottom, rgba(34, 34, 34, 0), #222222);
   height: inherit;
   min-height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .projects__grid {
@@ -140,7 +146,7 @@ a:hover {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  gap: 1rem;
+  gap: 2.5rem;
 }
 
 @media (min-width: 40em) {
