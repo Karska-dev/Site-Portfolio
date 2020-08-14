@@ -15,11 +15,10 @@
     height: 4.0625rem;
 
     svg {
-      stroke-width: 10px;
       
       path {
         fill: var(--thirdColor);
-        transition: stroke 300ms ease-in-out;
+        transition: fill 300ms ease-in-out;
       }
     }
   }

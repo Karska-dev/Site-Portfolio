@@ -52,6 +52,19 @@ a:hover {
   overflow: hidden;
 }
 
+.home-link svg {
+  height: 2.25rem;
+}
+
+.home-link svg path {
+  -webkit-transition: fill 300ms ease-in-out;
+  transition: fill 300ms ease-in-out;
+}
+
+.home-link:hover svg path {
+  fill: var(--accentColor);
+}
+
 .intro {
   position: relative;
 }
@@ -289,14 +302,10 @@ a:hover {
   height: 4.0625rem;
 }
 
-.contact__cover a svg {
-  stroke-width: 10px;
-}
-
 .contact__cover a svg path {
   fill: var(--thirdColor);
-  -webkit-transition: stroke 300ms ease-in-out;
-  transition: stroke 300ms ease-in-out;
+  -webkit-transition: fill 300ms ease-in-out;
+  transition: fill 300ms ease-in-out;
 }
 
 .contact__cover a[href^="mailto:"]::after {
@@ -596,5 +605,12 @@ circle {
 .toggle__checkbox:checked ~ .toggle__layer {
   border-color: var(--mainColor);
   background-color: var(--secondColor);
+}
+
+.article {
+  width: 90%;
+  height: inherit;
+  margin: 0 auto;
+  padding-top: 10%;
 }
 /*# sourceMappingURL=style.css.map */
