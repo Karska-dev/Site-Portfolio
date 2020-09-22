@@ -4,4 +4,4 @@ This is my site portfolio where you can see my projects and find how to contact 
 
 🚀️ [Live link](https://www.karska.dev/), 🚀️ [one more live link](karska-dev.github.io)
 
-![image](./images/project-portfolio.png)
+<img src='./images/project-portfolio.png' width='400px'/>
