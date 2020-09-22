@@ -1,7 +1,7 @@
 circle {fill-opacity: 50%;}
 
-.small {fill: $orangeRed;}
+.small {fill: var(--accentColor);}
 
-.medium {fill: $gray;}
+.medium {fill: var(--secondColor);}
 
-.large {fill: $grayishBlue;}
+.large {fill: var(--thirdColor);}

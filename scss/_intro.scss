@@ -51,3 +51,27 @@
     }
   }
 }
+
+[data-theme="light"] {
+  .intro {
+    background-image: linear-gradient(
+      135deg,
+      var(--mainColor) 40%,
+      rgb(158, 158, 158)
+    );
+  }
+
+  .projects {
+    background-color: white;
+    background-image: none;
+
+    &__cover {
+      background-color: transparent;
+      background-image: none;
+    }
+
+    &__item {
+      filter: drop-shadow(2px 4px 6px gray);
+    }
+  }
+}

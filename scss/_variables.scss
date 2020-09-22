@@ -1,9 +1,4 @@
 // Basic colors
-$white: #ffffff;
-$black: #222222;
-$orangeRed: #FF5722;
-$grayishBlue: rgb(96, 125, 139);
-$gray: #9E9E9E;
 
 :root {
   --mainColor: #222222;
@@ -15,6 +10,15 @@ $gray: #9E9E9E;
   --thirdColor: #9E9E9E;
 }
 
+[data-theme='light'] {
+  --mainColor: #ffffff;
+  --mainColorOpac: rgba(255, 255, 255, 0.5);
+  --mainColorSemiOpac: rgba(255, 255, 255, 0.7);
+  --textColor: #222222;
+  --accentColor: #ff5722;
+  --secondColor: #607d8b;
+  --thirdColor: #9e9e9e;
+}
 // Font sizes
 $font-sm: 0.875rem; // 14px
 $font-med: 1.125rem; // 18px
