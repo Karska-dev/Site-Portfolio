@@ -1,44 +1,38 @@
-console.warn('Temporary redirected');
-window.location.href = "./construction/construction.html";
+// open/close menu button
+let menuBtn = document.querySelector('.header__menu');
+let overlay = document.querySelector('.overlay');
+let closeBtn = document.querySelector('.menu__close');
 
-const sections = document.querySelectorAll('section');
-//console.log(sections);
-const bubble = document.querySelector(".bubble");
-const gradients = [
-    "linear-gradient(to right top,  grey, wheat)",
-    "linear-gradient(to right top,  wheat, olive)",
-    "linear-gradient(to right top, wheat, rgb(60, 44, 131))",
-]
+menuBtn.addEventListener('click', openMenu);
 
-const options = {
-    threshold: 0.7
+function openMenu() {
+  //console.log('click-click');
+  overlay.classList.add('overlay--visible');
+  document.body.classList.add('noscroll');
 }
 
-let observer = new IntersectionObserver(navCheck, options);
+closeBtn.addEventListener('click', closeMenu);
 
-function navCheck(entries) {
-    entries.forEach(entry => {
-        const className = entry.target.className;
-        const activeAnchor = document.querySelector(`[data-page=${className}]`);
-        const gradientIndex = entry.target.getAttribute('data-index');
-        const coords = activeAnchor.getBoundingClientRect();
-        const directions = {
-            height: coords.height,
-            width: coords.width,
-            top: coords.top,
-            left: coords.left
-        };
-        if (entry.isIntersecting) {
-            bubble.style.setProperty('left', `${directions.left}px`);
-            bubble.style.setProperty('top', `${directions.top}px`);
-            bubble.style.setProperty('width', `${directions.width}px`);
-            bubble.style.setProperty('height', `${directions.height}px`);
-            //bubble.style.background = gradients[gradientIndex];
-            bubble.style.borderRadius = '15px 50px';
-        }
-    })
+function closeMenu() {
+  //console.log('click-click');
+  overlay.classList.remove('overlay--visible');
+  document.body.classList.remove('noscroll');
 }
 
-sections.forEach(section => {
-    observer.observe(section);
-})
+// menu links - fix for exit from menu
+let menuLinks = document.querySelectorAll('.menu__link');
+
+Object.values(menuLinks).map((link) => {link.addEventListener('click', closeMenu)});
+
+// light/dark mode switch or toggle
+let toggle = document.querySelector('.toggle__checkbox');
+
+toggle.addEventListener('change', switchMode);
+
+function switchMode(event) {
+  if (event.target.checked) {
+    document.body.setAttribute('data-theme', 'light');
+  } else {
+    document.body.removeAttribute('data-theme');
+  }
+}

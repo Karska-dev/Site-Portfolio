@@ -5,7 +5,7 @@
   z-index: 1;
   height: 100vh;
   width: 100%;
-  background-image: url('../patterns/connected.png');
+  background-image: url("../patterns/connected.png");
   background-color: var(--mainColor);
   color: white;
   transition: opacity 3s ease-in-out;
@@ -64,16 +64,15 @@
     justify-content: space-evenly;
     align-items: center;
     height: 45%;
-    
+
     a {
       color: var(--secondColor);
 
-      &:hover{
+      &:hover {
         color: var(--accentColor);
         transform: scale(1.1);
       }
     }
-
   }
 
   &__links {
@@ -82,7 +81,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;  
+    align-items: center;
 
     a {
       svg {
@@ -95,6 +94,34 @@
     a:hover {
       color: var(--accentColor);
       transform: scale(1.1);
+    }
+  }
+}
+
+[data-theme="light"] {
+  .menu {
+    a {
+      color: var(--secondColor);
+      &:hover {
+        color: var(--accentColor);
+      }
+    }
+
+    &__links a {
+      color: var(--mainColor);
+    }
+  }
+
+  .overlay {
+    background-color: var(--secondColor);
+
+    &__cover {
+      background: linear-gradient(
+        to top,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.6) 50%,
+        rgba(255, 255, 255, 1) 100%
+      );
     }
   }
 

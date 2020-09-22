@@ -12,10 +12,6 @@
   align-items: center;
   transition: background 300ms ease-in-out;
 
-  &--light {
-    background-color: rgba(255, 255, 255, 0.5);
-  }
-
   &__toggle {
     width: 13.25rem;
     height: 2.0625rem;
@@ -31,9 +27,13 @@
   &:hover {
     background-color: var(--mainColorSemiOpac);
   }
-
-  &--light:hover {
-    background-color: rgba(255, 255, 255, 0.7);
-  }
 }
 
+[data-theme="light"] {
+  .header__menu a {
+    color: var(--secondColor);
+    &:hover {
+      color: var(--accentColor);
+    }
+  }
+}
